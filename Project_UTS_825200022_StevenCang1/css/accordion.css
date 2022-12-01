@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+     font-family:'Arial';
+     padding:2em 6em;
+   }
+/*Accordion*/
+.acc-kontainer {
+    width: 600px;
+    margin: auto;
+}
+.acc-kontainer .acc-body {
+     width: 98%;
+     width: calc(100% - 20px);
+     margin: 0 auto;
+     height: 0;
+     color: rgba(0, 0, 0, 0);
+     background-color: rgba(255, 255, 255, 0.2);
+     line-height: 28px;
+     padding: 0 20px;
+     box-sizing: border-box;
+     transition: 0.5s;
+}
+   
+.acc-kontainer label {
+     cursor: pointer;
+     background-color:rgba(71, 52, 16, 0.589);
+     border-bottom: 1px solid orange;
+     display: block;
+     padding: 15px;
+     width: 100%;
+     color: orange;
+     font-weight: 400;
+     box-sizing: border-box;
+     z-index: 100;
+}
+   
+.acc-kontainer input{
+     display: none;
+}
+   
+.acc-kontainer label:before {
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     content: '●';
+     font-weight: bolder;
+     float: right;
+     transition: 0.5s;
+}
+   
+.acc-kontainer input:checked+label {
+     background-color: rgba(71, 52, 16, 0.589);
+}
+   
+.acc-kontainer input:checked+label:before {
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     content: '●';
+     transition: 0.5s;
+     color: black;
+}
+   
+.acc-kontainer input:checked~.acc-body {
+     height: auto;
+     color: orange;
+     font-size: 16px;
+     padding: 20px;
+}

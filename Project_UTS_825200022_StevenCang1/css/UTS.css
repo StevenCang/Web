@@ -1,0 +1,1754 @@
+*{padding: 0; margin: 0;}
+
+body { 
+    background: black;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1200px;
+    margin:auto;
+}
+
+/* Header */
+header {
+    height: 100px;
+    background: black;
+    overflow: hidden; 
+}
+
+header img {
+    float: left;
+    width: 300px; 
+    height: 200px;
+    margin-left: 50px;  
+    margin-top: -50px;
+}
+
+/* Menu */
+menu ul li {
+    float: left;
+    text-decoration: none;
+    list-style: none;
+    background:black;
+    line-height: 100px;
+}
+
+menu ul li a {
+    text-decoration: none; 
+    color: #94775e;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+menu ul li ul {
+    display: none;
+    border-top: 3px solid orange;
+}
+
+menu ul li:hover > ul{
+    display: block;
+}
+
+menu {
+    margin-left: 400px;
+}
+
+menu ul {
+    z-index: 1;
+}
+
+
+menu ul li ul{
+    position: absolute;
+}
+
+menu ul li ul li{
+    float: none;
+    position: relative;
+}
+
+menu li:hover {
+    background: black; 
+    color:orange;
+}
+
+menu ul li a:hover {
+    background: black; 
+    color:orange;
+}
+
+menu ul ul ul { 
+    left: 100%;
+    top: -3px;
+    width: 200px;
+}
+
+/* Tulisan reach dan button more */
+.container-tengah {
+    width: 100%;
+    margin:auto;
+}
+
+.tengah-tengah {
+    width: 1200px; 
+    margin: auto;
+}
+
+.tengah {
+   background-image: radial-gradient(circle at 50% 50%, white -250%, rgba(0, 0, 0, 0.6) 100%) ,url(../images/invo.png);
+   width: 100%;
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.tengah .tengah-kata {
+    padding: 200px 0px;
+}
+
+.tengah .tengah-kata h1 {
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: orange;
+}
+
+.tengah .tengah-kata h2 {
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: lightcyan;
+}
+
+.tengah .tengah-kata p {
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: lightcyan;
+}
+
+.tengah .tengah-kata .btn a {
+    position: relative;
+    width:  160px;
+    height: 60px;
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.tengah .tengah-kata .btn a:before,
+.tengah .tengah-kata .btn a:after {
+    content:  '';
+    position: absolute;
+    inset: 0;
+    background: red;
+    transition: 0.5s;
+}
+
+.tengah .tengah-kata .btn a:nth-child(1)::before,
+.tengah .tengah-kata .btn a:nth-child(1)::after {
+    background: linear-gradient(45deg, #00ccff,#94775e,#d400d4);
+}
+
+.tengah .tengah-kata .btn a:hover:before {
+    inset: -3px;
+}
+
+.tengah .tengah-kata .btn a:hover:after {
+    inset: -3px;
+    filter: blur(10px);
+}
+
+.tengah .tengah-kata .btn a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: orange;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* input text name location select region button find */
+.container-bawah{
+    width: 1200px; margin: auto;
+}
+
+.find-bawah {
+    background: black;
+    height: 80px;
+    width: 1000px;
+    margin-left: 100px;
+    border-bottom: 5px solid orange;
+    position:relative;
+    border-radius: 5px;
+}
+
+select {
+    margin: 10px;
+    width: 180px;
+    background: transparent;
+    border: transparent;
+    height: 60px;
+    color: gray;
+}
+
+select option {
+    background: black;
+}
+
+form input {
+    margin: 10px;
+    width: 225px;
+    background: transparent;
+    border: transparent;
+    line-height: 60px;
+    color: gray;
+}
+
+.find-bawah .btn2 {
+    display:inline-block;
+    position:absolute;
+    left: 750px;
+    top: 12px;
+}
+
+.find-bawah .btn2 a {
+    width:  225px;
+    height: 50px;
+    display: inline-block;
+}
+
+.find-bawah .btn2 a:before,
+.find-bawah .btn2 a:after {
+    content:  '';
+    position: absolute;
+    inset: 0;
+    background: red;
+    transition: 0.5s;
+}
+
+.find-bawah .btn2 a:nth-child(1)::before,
+.find-bawah .btn2 a:nth-child(1)::after {
+    background: linear-gradient(135deg, #00ccff,#94775e,#d400d4);
+}
+
+.find-bawah .btn2 a:hover:before {
+    inset: -3px;
+}
+
+.find-bawah .btn2 a:hover:after {
+    inset: -3px;
+    filter: blur(10px);
+}
+
+.find-bawah .btn2 a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: orange;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.find-bawah .btn2:hover {
+    background : transparent;
+}
+
+.find-bawah .bordertipis1 {
+    position: absolute;
+    top: 10px;
+    left: 240px;
+    height: 60px;
+    border-right: 1px solid gray;
+}
+
+.find-bawah .bordertipis2 {
+    position: absolute;
+    top: 10px;
+    left: 490px;
+    height: 60px;
+    border-right: 1px solid gray;
+}
+
+.find-bawah .bordertipis3 {
+    position: absolute;
+    top: 10px;
+    left: 725px;
+    height: 60px;
+    border-right: 1px solid gray;
+}
+
+/* tulisan list gambar proplayer */
+.container-tls {
+    width: 100%; margin: auto;
+}
+
+.tls-tengah {
+    width: 1200px; margin: auto;
+}
+
+.tls-tengah h1 {
+    margin-left: 550px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: orange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tls-tengah h2 {
+    margin-left: 530px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: lightcyan;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* gambar yang ada like dan love */
+.container-gmbr1 {
+    width: 100%; margin: auto;
+}
+
+.penutup-foto {
+    margin: auto; 
+    width: 1200px;
+}
+
+.gmbr1 {
+    margin-left: -80px;
+}
+
+.foto {
+    width: 200px;
+    float: left;
+    margin-left: 70px;
+    position: relative;
+}
+
+.foto img {
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+
+.foto .judul {
+    position: absolute;
+    font-size: 14px;
+    top: 240px;
+    left: 60px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.foto .like {
+    position: absolute;
+    font-size: 14px;
+    top: 280px;
+    left: 60px;
+    color: white;
+    width: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#btn3 {
+    background:transparent;
+    width: 30px;
+    height: 30px;
+    display:inline-block;
+    position:absolute;
+    left: 263px;
+    bottom: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#btn3 a {
+    text-decoration: none;
+    color: white;
+}
+
+#btn3:hover{
+    background : rgba(255, 255, 255, 0.473);
+}
+
+#btn3 a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: transparent;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* btn pagination */
+.container-btn5 {
+    width: 100%; margin: auto;
+}
+
+.btn5-tengah {
+    width: 1200px; margin: auto;
+}
+
+#btn5 {
+    float: left;
+    position:relative;
+    top: 320px;
+    left: -455px;
+}
+
+#btn5 a {
+    text-decoration: none;
+    color: orange;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#btn5 a:hover{
+    color: #94775e;
+}
+
+/* tulisan article players dan more article */
+.container-tls1 {
+    width: 100%; margin: auto;
+}
+
+.tls1-tengah {
+    width: 1200px; margin: auto;
+}
+
+.tls1-tengah h1 {
+    margin-left: 550px;
+    margin-top: 470px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: orange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tls1-tengah h2 {
+    margin-left: 530px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: lightcyan;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* gambar articleplayers dan addfavorite dan continue reading */
+.container-article {
+    width: 100%; margin: auto;
+}
+
+.article-tengah {
+    width: 1200px; margin: auto;
+}
+
+.article {
+    margin-left: 250px;
+}
+
+.foto1 {
+    width: 300px;
+    float: left;
+    margin-left: 30px;
+    position: relative;
+    background: orange;
+    border-radius: 5px;
+}
+
+.foto1 img {
+    width: 300px;
+    height: 250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.judul1 {
+    font-size: 20px;
+    color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.judul2 {
+    font-size: 12px;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.ticle {
+    font-size: 14px;
+    color: black;
+    margin-left: 10px;
+    margin-bottom: 70px;
+    margin-top: -10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.foto1 .Nomer1 {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    background-color: orange;
+    top: 40px;
+    left: 200px;
+    border-radius: 50%;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.foto1 .Keterangan1 {
+    position: absolute;
+    font-size: 10px;
+    top: 10px;
+    left: 20px;
+    text-align: center;
+    padding: 7px;
+}
+
+#foto-btn-kiri {
+    position:absolute;
+    top: 410px;
+    left: 15px;
+}
+
+#foto-btn-kiri a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#foto-btn-kiri a:hover{
+    color: #94775e;
+}
+
+#foto-btn-kanan {
+    position:absolute;
+    top: 410px;
+    left: 160px;
+}
+
+#foto-btn-kanan a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#foto-btn-kanan a:hover{
+    color: #94775e;
+}
+
+.tipis1 {
+    position: absolute;
+    top: 399px;
+    left: 141px;
+    height: 39px;
+    border-right: 1px solid black;
+}
+
+.tipis2 {
+    position: absolute;
+    top: 399px;
+    width: 300px;
+    border-top: 1px solid black;
+}
+
+/* tulisan  dota 2 valve */
+.container-tls2 {
+    width: 100%; margin: auto;
+}
+
+.tls2-tengah {
+    width: 1200px; margin: auto;
+}
+
+.tls2-tengah h1 {
+    margin-left: 550px;
+    margin-top: 600px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: orange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tls2-tengah h2 {
+    margin-left: 530px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: lightcyan;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* sosmed */
+.container-article1 {
+    width: 100%; margin: auto;
+}
+
+.article1-tengah {
+    width: 1200px; margin: auto;
+}
+
+.article1 {
+    margin-left: 230px;
+}
+
+.foto2 {
+    width: 300px;
+    float: left;
+    margin-left: 30px;
+    position: relative;
+    border-radius: 5px;
+    border: 2px solid orange;
+}
+
+.foto2 img {
+    width: 50px;
+    height: 50px;
+    margin-left: 120px;
+    margin-top: 20px ;
+}
+
+.judul3 {
+    font-size: 20px;
+    color: #94775e;
+    margin-top: 10px;
+    margin-left: 110px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.ticle1 {
+    font-size: 14px;
+    color: orange;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+/* garis bawah sosmed */
+.container-jrk {
+    width: 100%; margin: auto;
+}
+
+.jrk-tengah {
+    width: 1200px; margin: auto;
+}
+
+.jrk-tengah h1 {
+    margin-top: 350px;
+    margin-left: 130px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: orange;
+}
+
+/* container baru */
+.container-baru {
+    width: 100%;
+    margin:auto;
+}
+
+.baru-kata {
+    width:1200px; 
+    margin: auto;
+    margin-top: -100px;
+}
+
+.kata-baru {
+    width: 500px;
+    float: left;
+    margin-left: 60px;
+}
+
+.baru {
+   background-image: radial-gradient(circle at 50% 50%, white -250%, rgba(0, 0, 0, 0.6) 100%) ,url(../images/ti.jpg);
+   width: 100%;
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   float: left;
+}
+
+.baru .baru-kata {
+    padding: 150px 0px;
+}
+
+.baru .baru-kata h2 {
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: orange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.baru .baru-kata p {
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: lightcyan;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.baru .baru-kata .btn a {
+    position: relative;
+    width:  160px;
+    height: 60px;
+    display: inline-block;
+    margin-left: 60px;
+    margin-bottom: 100px;
+}
+
+.baru .baru-kata .btn a:before,
+.baru .baru-kata .btn a:after {
+    content:  '';
+    position: absolute;
+    inset: 0;
+    background: red;
+    transition: 0.5s;
+}
+
+.baru .baru-kata .btn a:nth-child(1)::before,
+.baru .baru-kata .btn a:nth-child(1)::after {
+    background: linear-gradient(45deg, #00ccff,#94775e,#d400d4);
+}
+
+.baru .baru-kata .btn a:hover:before {
+    inset: -3px;
+}
+
+.baru .baru-kata .btn a:hover:after {
+    inset: -3px;
+    filter: blur(10px);
+}
+
+.baru .baru-kata .btn a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: orange;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Accordion*/
+.acc-body {
+    width: 480px;
+     margin: 0 auto;
+     height: 0;
+     color: rgba(0, 0, 0, 0);
+     background-color: #15005000;
+     line-height: 28px;
+     padding: 0 20px;
+     box-sizing: border-box;
+     transition: 0.5s;
+     border: 2px solid darkturquoise;
+}
+   
+label {
+     cursor: pointer;
+     background-color: rgba(0, 0, 0, 0);
+     border: 2px solid darkturquoise;
+     display: block;
+     padding: 15px;
+     width: 100%;
+     color: orange;
+     font-weight: 1000;
+     box-sizing: border-box;
+     z-index: 100;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     text-shadow: 2px 2px black;
+}
+   
+.tabel-baru input{
+     display: none;
+}
+   
+label:before {
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     content: '●';
+     font-weight: bolder;
+     float: right;
+     transition: 0.5s;
+}
+   
+input:checked+label {
+     background-color: rgba(0, 0, 0, 0);
+}
+   
+input:checked+label:before {
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     content: '●';
+     transition: 0.5s;
+     color: darkturquoise;
+}
+   
+input:checked~.acc-body {
+     height: auto;
+     color: white;
+     font-size: 16px;
+     padding: 20px;
+     font-weight: 1000;
+     text-shadow: 2px 2px black;
+}
+
+
+/* video section */
+.container-video {
+    width:100%;
+    height:520px;
+    position:relative;
+    overflow:hidden;
+}
+
+.container-video .video-test {
+    z-index: 10;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.test-video {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.test-video h1 {
+    color:orange;
+    font-size:20px;
+    margin-top:20px;
+    margin-left:40px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px black;
+}
+
+
+.vid {
+    position:absolute;
+    width: 100%; 
+    height: 100%; 
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 100% 100%, white -50%, rgba(0, 0, 0, 0.6) 100%);
+    z-index: 2;
+}
+
+video {
+    position:absolute;
+    top: 100px;
+    left:0;
+    bottom:0;
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+#btn6 {
+    border:3px solid white;
+    height:70px;
+    border-radius:50%;
+    width:70px;
+    margin-left:30px;
+    margin-top: 10px;
+}
+
+#btn6:hover {
+    border: 3px solid orange;
+    background: rgba(255, 255, 255, 0.527);
+}
+
+#btn7 a {
+    position: relative;
+    top: 12px;
+    left: 22px;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+
+#btn7 a:hover{
+    color: black;
+}
+
+/* tulisan harga battlepass */
+.container-tls3 {
+    width: 100%; margin: auto;
+}
+
+.tls3-tengah {
+    width: 1200px; margin: auto;
+}
+
+.tls3-tengah h1 {
+    margin-left: 560px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: orange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tls3-tengah h2 {
+    margin-left: 500px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: lightcyan;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* harga battlepass */
+.container-bp {
+    width: 100%; margin: auto;
+}
+
+.bp-tengah {
+    width: 1200px; margin: auto;
+}
+
+.bp {
+   margin-left: 200px;
+}
+
+.pass {
+    width: 300px;
+    float: left;
+    margin-left: 30px;
+    position: relative;
+    background: #150050;
+    border-radius: 5px;
+}
+
+.bp1 {
+    font-size: 40px;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bp2 {
+    font-size: 30px;
+    color: orange;
+    margin-top: 10px;
+    margin-left: 80px;
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bp3 {
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+    margin-left: -10px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bp4 {
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+    margin-left: -18px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pass1 {
+    background: #2A0944;
+}
+
+.pass2 {
+    background: #3F0071;
+}
+
+.pass3 {
+    background: #610094;
+}
+
+.bp5 {
+    padding: 10px;
+    font-size: 15px;
+    color: skyblue;
+    margin-left: -18px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bp5:hover {
+    color: white;
+}
+
+.pass .btn a {
+    position: relative;
+    width:  250px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.pass .btn a:before,
+.pass .btn a:after {
+    content:  '';
+    position: absolute;
+    inset: 0;
+    background: red;
+    transition: 0.5s;
+}
+
+.pass .btn a:nth-child(1)::before,
+.pass .btn a:nth-child(1)::after {
+    border-radius: 10px;
+    background: linear-gradient(45deg, #00ccff,#94775e,#d400d4);
+}
+
+.pass .btn a:hover:before {
+    inset: -3px;
+}
+
+.pass .btn a:hover:after {
+    inset: -3px;
+    filter: blur(10px);
+}
+
+.pass .btn a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: orange;
+    border-radius: 10px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* peta */
+.container-peta {
+    width:100%;
+    height:520px;
+    position:relative;
+    overflow:hidden;
+}
+
+.container-peta .peta-test {
+    z-index: 10;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.test-peta {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.peta {
+    position:absolute;
+    width: 100%; 
+    height: 100%; 
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+iframe {
+    position:absolute;
+    top: 100px;
+    left:0;
+    bottom:0;
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+/* tulisan contact us */
+.container-tls4 {
+    width: 100%; margin: auto;
+}
+
+.tls4-tengah {
+    width: 1200px; margin: auto;
+}
+
+.tls4-tengah h1 {
+    margin-left: 550px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: orange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tls4-tengah h2 {
+    margin-left: 450px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    color: lightcyan;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tengah-tls4 .btn a {
+    position: relative;
+    width:  200px;
+    height: 40px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-left: 500px;
+}
+
+.tengah-tls4 .btn a:before,
+.tengah-tls4 .btn a:after {
+    content:  '';
+    position: absolute;
+    inset: 0;
+    background: red;
+    transition: 0.5s;
+}
+
+.tengah-tls4 .btn a:nth-child(1)::before,
+.tengah-tls4 .btn a:nth-child(1)::after {
+    background: linear-gradient(45deg, #00ccff,#94775e,#d400d4);
+}
+
+.tengah-tls4 .btn a:hover:before {
+    inset: -3px;
+}
+
+.tengah-tls4 .btn a:hover:after {
+    inset: -3px;
+    filter: blur(10px);
+}
+
+.tengah-tls4 .btn a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: orange;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.container-jrk1 {
+    width:100%;
+    height:100px;
+    position:relative;
+}
+
+
+line {
+    border-top: 1px solid white;
+    position:absolute;
+    top: 30px;
+    width:100%;
+}
+
+
+/* bawah */
+.container-bawa {
+    width: 100%;
+    margin:auto;
+}
+
+.Paragraf {
+    width: 1200px; 
+    margin: auto;
+}
+
+.Paragraf .kiripbawah img {
+    width: 200px;
+    height: 100px;
+    margin-top: -40px;
+}
+
+.bawa .bawa-kata h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: orange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bawa .bawa-kata p {
+    font-size: 14px;
+    color: lightcyan;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.kiripbawah {
+    float: left;
+    width: 350px;
+    margin-left: 5px;
+}
+
+.Paragraf .kiripbawah .kananbawah img {
+    padding: 2px;
+    background: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+.Paragraf .kiripbawah .kananbawah img:hover {
+    padding: 5px;
+}
+
+.Paragraf .kiripbawah .pakai1 {
+    float: left;
+    color: skyblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Paragraf .kiripbawah .pakai2 {
+    margin-left: 50px;
+    float: left;
+    color: skyblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Paragraf .kiripbawah .use {
+    margin-bottom: 10px;
+    margin-left: 2px; 
+}
+
+.Paragraf .kiripbawah .use a{
+    color: white;
+    text-decoration: none;
+}
+
+.Paragraf .kiripbawah .use a:hover {
+    color: skyblue;
+}
+
+.Paragraf .kiripbawah .kananbawah img:hover {
+    padding: 5px;
+}
+
+.Paragraf .kiripbawah .pakai3 {
+    margin-top: 50px;
+}
+
+.Paragraf .kiripbawah .pakai3 h2 {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.Paragraf .kiripbawah .pakai3 a {
+    color: skyblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.Paragraf .kiripbawah .pakai3 .txt {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    margin-top: -15px;
+    margin-left: 70px;
+}
+
+/* Tulisan fillthisform  */
+.container-tmb {
+    width: 100%;
+    margin:auto;
+}
+
+.tmb-tmb {
+    width: 1200px; 
+    margin: auto;
+}
+
+.tmb {
+   width: 100%;
+   height: 100%;
+}
+
+
+.tmb .tmb-kata h1 {
+    margin-left: 250px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: orange;
+}
+
+.tmb .tmb-kata h2 {
+    margin-top: 400px;
+    margin-left: 440px;
+    margin-bottom: -30px;
+    font-size: 50px;
+    color: lightcyan;
+}
+
+.tmb .tmb-kata p {
+    width: 700px;
+    margin-left: 260px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: lightcyan;
+    text-align: center;
+}
+
+/* input text name location select region button find */
+.container-txt{
+    width: 1200px; margin: auto;
+}
+
+.find-txt {
+    background: black;
+    height: 80px;
+    width: 1200px;
+    margin-left: 150px;
+    position:relative;
+    border-radius: 5px;
+}
+
+select {
+    margin: 10px;
+    width: 180px;
+    background: orange;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 60px;
+    color: gray;
+}
+
+select option {
+    background: black;
+}
+
+form input {
+    margin: 10px;
+    width: 225px;
+    background: orange;
+    border: 1px solid white;
+    border-radius: 5px;
+    line-height: 60px;
+    color: gray;
+}
+
+.find-txt .btn2 {
+    display:inline-block;
+    position:absolute;
+    left: 350px;
+    top: 100px;
+}
+
+.find-txt .btn2 a {
+    width:  225px;
+    height: 50px;
+    display: inline-block;
+}
+
+.find-txt .btn2 a:before,
+.find-txt .btn2 a:after {
+    content:  '';
+    position: absolute;
+    inset: 0;
+    background: red;
+    transition: 0.5s;
+}
+
+.find-txt .btn2 a:nth-child(1)::before,
+.find-txt .btn2 a:nth-child(1)::after {
+    background: linear-gradient(135deg, #00ccff,#94775e,#d400d4);
+}
+
+.find-txt .btn2 a:hover:before {
+    inset: -3px;
+}
+
+.find-txt .btn2 a:hover:after {
+    inset: -3px;
+    filter: blur(10px);
+}
+
+.find-txt .btn2 a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: orange;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.find-txt .btn2:hover {
+    background : transparent;
+}
+
+
+/* btn bawah */
+.find-txt .btn8 {
+    display:inline-block;
+    position:absolute;
+    left: -40px;
+    top: 100px;
+}
+
+.find-txt .btn8 a {
+    width:  225px;
+    height: 50px;
+    display: inline-block;
+}
+
+.find-txt .btn8 a:before,
+.find-txt .btn8 a:after {
+    content:  '';
+    position: absolute;
+    inset: 0;
+    background: red;
+    transition: 0.5s;
+}
+
+.find-txt .btn8 a:nth-child(1)::before,
+.find-txt .btn8 a:nth-child(1)::after {
+    background: linear-gradient(135deg, #00ccff,#94775e,#d400d4);
+}
+
+.find-txt .btn8 a:hover:before {
+    inset: -3px;
+}
+
+.find-txt .btn8 a:hover:after {
+    inset: -3px;
+    filter: blur(10px);
+}
+
+.find-txt .btn8 a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: orange;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.find-txt .btn8:hover {
+    background : transparent;
+}
+
+/* btn9 */
+.find-txt .btn9 {
+    display:inline-block;
+    position:absolute;
+    left: 220px;
+    top: 100px;
+}
+
+.find-txt .btn9 a {
+    width:  225px;
+    height: 50px;
+    display: inline-block;
+}
+
+.find-txt .btn9 a:before,
+.find-txt .btn9 a:after {
+    content:  '';
+    position: absolute;
+    inset: 0;
+    background: red;
+    transition: 0.5s;
+}
+
+.find-txt .btn9 a:nth-child(1)::before,
+.find-txt .btn9 a:nth-child(1)::after {
+    background: linear-gradient(135deg, #00ccff,#94775e,#d400d4);
+}
+
+.find-txt .btn9 a:hover:before {
+    inset: -3px;
+}
+
+.find-txt .btn9 a:hover:after {
+    inset: -3px;
+    filter: blur(10px);
+}
+
+.find-txt .btn9 a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: orange;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.find-txt .btn9:hover {
+    background : transparent;
+}
+
+/* btn10 */
+.find-txt .btn10 {
+    display:inline-block;
+    position:absolute;
+    left: 480px;
+    top: 100px;
+}
+
+.find-txt .btn10 a {
+    width:  225px;
+    height: 50px;
+    display: inline-block;
+}
+
+.find-txt .btn10 a:before,
+.find-txt .btn10 a:after {
+    content:  '';
+    position: absolute;
+    inset: 0;
+    background: red;
+    transition: 0.5s;
+}
+
+.find-txt .btn10 a:nth-child(1)::before,
+.find-txt .btn10 a:nth-child(1)::after {
+    background: linear-gradient(135deg, #00ccff,#94775e,#d400d4);
+}
+
+.find-txt .btn10 a:hover:before {
+    inset: -3px;
+}
+
+.find-txt .btn10 a:hover:after {
+    inset: -3px;
+    filter: blur(10px);
+}
+
+.find-txt .btn10 a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: orange;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.find-txt .btn10:hover {
+    background : transparent;
+}
+
+/* btn11 */
+.find-txt .btn11 {
+    display:inline-block;
+    position:absolute;
+    left: 740px;
+    top: 100px;
+}
+
+.find-txt .btn11 a {
+    width:  225px;
+    height: 50px;
+    display: inline-block;
+}
+
+.find-txt .btn11 a:before,
+.find-txt .btn11 a:after {
+    content:  '';
+    position: absolute;
+    inset: 0;
+    background: red;
+    transition: 0.5s;
+}
+
+.find-txt .btn11 a:nth-child(1)::before,
+.find-txt .btn11 a:nth-child(1)::after {
+    background: linear-gradient(135deg, #00ccff,#94775e,#d400d4);
+}
+
+.find-txt .btn11 a:hover:before {
+    inset: -3px;
+}
+
+.find-txt .btn11 a:hover:after {
+    inset: -3px;
+    filter: blur(10px);
+}
+
+.find-txt .btn11 a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: orange;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.find-txt .btn11:hover {
+    background : transparent;
+}
+
+
+
+/* footer */
+footer {
+    background:#94775e;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    line-height: 80px;
+    height: 80px;
+    margin-top: 300px;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: orange;
+}

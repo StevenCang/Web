@@ -1,0 +1,152 @@
+*{padding: 0; margin: 0;}
+
+body { 
+    background: black;
+}
+
+.container {
+    width: 1200px;
+    margin:auto;
+}
+
+/* Header */
+header {
+    height: 100px;
+    background: black;
+    overflow: hidden; 
+}
+
+header img {
+    float: left;
+    width: 300px; 
+    height: 200px;
+    margin-left: 50px;  
+    margin-top: -50px;
+}
+
+/* Menu */
+menu ul li {
+    float: left;
+    text-decoration: none;
+    list-style: none;
+    background:black;
+    line-height: 100px;
+}
+
+menu ul li a {
+    text-decoration: none; 
+    color: #94775e;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+menu ul li ul {
+    display: none;
+    border-top: 3px solid orange;
+}
+
+menu ul li:hover > ul{
+    display: block;
+}
+
+menu {
+    margin-left: 400px;
+}
+
+menu ul {
+    z-index: 11;
+}
+
+
+menu ul li ul{
+    position: absolute;
+}
+
+menu ul li ul li{
+    float: none;
+    position: relative;
+}
+
+menu li:hover {
+    background: black; 
+    color:orange;
+}
+
+menu ul li a:hover {
+    background: black; 
+    color:orange;
+}
+
+menu ul ul ul { 
+    left: 100%;
+    top: -3px;
+    width: 200px;
+}
+
+/* peta */
+.container-peta {
+    width:100%;
+    height:700px;
+    position:relative;
+    overflow:hidden;
+}
+
+.container-peta .peta-test {
+    z-index: 10;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.test-peta {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.peta {
+    position:absolute;
+    width: 100%; 
+    height: 100%; 
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+iframe {
+    position:absolute;
+    top: 100px;
+    left:0;
+    bottom:0;
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+/* footer */
+footer {
+    background:#94775e;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    line-height: 80px;
+    height: 80px;
+    margin-top: 100px;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: orange;
+}
